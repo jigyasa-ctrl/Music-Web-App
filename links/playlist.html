@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!--<link rel='stylesheet' type='text/css' href='style2.css'>-->
+  
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+  
+</head>
+<style>
+    *{
+       
+    }
+    #spotify-brand{
+    font-family: orbitron;
+    font-size:30px;
+}
+
+.row1{
+    height:70vw;
+    background:rgb(0,0,0,0.3);
+}
+.try{
+    height: 50px;
+}
+.row2{
+    display: flex;
+    flex-wrap: flex-wrap;
+
+}
+.nav{
+    font-family:NUnito,sans-serif;
+}
+#logo{
+    width: 200px;
+    border-radius:50px;
+}
+#rowid{
+    position: absolute;
+    width:100%;
+    margin-bottom: 100px;
+    padding-left: 10px;;
+}
+.margin{
+    margin:0px;
+    background-image: url('https://marketing.dcassetcdn.com/blog/2018/September/Music-Logos/Rock-2.jpg');
+    background-repeat: no-repeat;
+    
+    background-position:top;
+    background-attachment: fixed;
+    background-size:cover;
+    position:relative;
+    color:white;
+}
+.font{
+    font-size: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: Nunito,sans-serif;
+    text-align: center;
+    padding:5px;
+}
+.font a{
+    text-decoration: none;
+    
+}
+.font:hover{
+    font-size:25px;
+    border: white;
+    border-radius: 30px;
+    padding: 5px;
+    background-color: rgb(218,112,214,0.3);
+    text-decoration: none;
+    cursor:pointer;
+}
+.image1{
+    height: 100px;
+    display:flex;
+    justify-content: left;
+    margin-top:370px;
+    font-size:75px;
+    padding-left: 20px;
+   font-family: nunito;  
+   transition: transform 2s;
+
+}
+.play1{
+    /*background-color: black;*/
+    height: 50px;
+    display:flex;
+    justify-content: space-between;
+    font-size: 200%;
+    margin-top: 20px;
+    
+}
+.play1:hover{
+    font-size:40px;
+    border-radius: 20px;
+}
+.bio{
+    background-color: rgb(165, 42, 42,0.5);
+    font-size: 25px;
+}
+.songs{
+    background-color:rgb(0,0,0,0.5);
+    color:white;
+  
+}
+.songs div{
+    
+    height:40px;
+    font-size:20px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 0.1rem solid white;
+    
+}
+.songs div:hover{
+    background-color: rgba(218, 123, 213, 0.295);
+    cursor:pointer;
+}
+.songs div .song-name{
+    width:90%;
+    margin-left:10px;
+    word-spacing: 0.1em;
+   
+}
+.songs div .fas{
+    padding-right:10px;
+    padding-left:10px;
+}
+.footer{
+    width:100%;
+   position: fixed;
+   bottom:0;
+   background-image: radial-gradient(circle, #060707, #011217, #061725, #1a1830, #341430);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+}
+.footer i:hover{
+
+    color: rgba(155, 20, 150, 0.5);
+}
+
+.footer div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: left;
+}
+.footer div:nth-child(1) img{
+    height:75px;
+    width: 100px;
+}
+.footer div:nth-child(2){
+    
+    position: relative;
+    width:80%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer div:nth-child(2) i{
+    margin-left:10px;
+}
+.footer div:nth-child(2)  div:nth-child(2){
+
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    
+
+}
+
+.footer div:nth-child(2)  div:nth-child(2) span{
+    
+    position: relative;
+    height:5px;
+    width:80%;
+    background-color: white;
+    border-radius: 5px;
+
+}
+.footer div:nth-child(2)  div:nth-child(2) span span{
+    position: absolute;
+    width:20%;
+    left: 0;;
+    background-color:rgba(155, 20, 150, 0.979);
+   
+
+}
+.footer div:nth-child(3){
+    width:10%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+}
+.footer div:nth-child(3) span{
+    position: relative;
+    width:80%;
+    height:5px;
+    background-color: white;
+    border-radius: 5px;
+
+}
+.footer div:nth-child(3) span span{
+    position: absolute;
+    background-color:rgba(155, 20, 150, 0.979);
+    left:0;
+    border-radius: 0%;
+}
+
+
+
+</style>
+<body class=margin>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid" style='font-size:15px'>
+    <div class="navbar-header " style='font-size:15px'>
+      <a id='spotify-brand'class="navbar-brand" href="#">Spotify v.2</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Top 20</a></li>
+      <li><a href="#">Profile</a></li>
+      <li><a href="#">Hello, Jigyasa</a></li>
+    </ul>
+  </div>
+</nav>
+<div id='rowid' class='row'>
+    <div class='col-lg-2'>
+        <div class='row row1'>
+            <div class='col-*-* font'><img id='logo' src='logo.png'></div>
+            <div class='col-*-* font try'><a href='../index.html' style='color:white'>Home</a></div>
+            <div class='col-*-* font try'>Browser</div>
+            <div class='col-*-* font try'>Radio</div>
+            <div class='col-*-* font try'>My Playlist</div>
+            <div class='col-*-* font try'>Moods</div>
+            
+        </div>
+    </div>
+
+    <div>
+        <div class='col-*-* image1'>
+            Top Songs
+        </div>
+        <div class='songs'>
+            <div id='song1'>
+                <i style='color:rgb(189, 58, 184)' class="fas fa-heart"></i>
+                <i class="fas fa-redo-alt"></i>
+                <span class='song-name'>God whispered your name</span>
+                <span class='song-time'>3:00</span>
+                
+                
+            </div>
+            <div>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-redo-alt"></i>
+                <span class='song-name'>Blue ain't your color</span>
+                <span class='song-time'>5:30</span>
+                
+                
+            </div>
+            <div>
+                <i style='color:rgb(189, 58, 184)' class="fas fa-heart"></i>
+                <i class="fas fa-redo-alt"></i>
+                <span class='song-name'>Paradise</span>
+                <span class='song-time'>5:30</span>
+                
+                
+            </div>
+            <div>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-redo-alt"></i>
+                <span class='song-name'>Why do you only call me when you're high?</span>
+                <span class='song-time'>5:30</span>
+                
+                
+            </div>
+            <div>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-redo-alt"></i>
+                <span class='song-name'>Stairway of heaven</span>
+                <span class='song-time'>5:30</span>
+                
+                
+            </div>
+            <div>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-redo-alt"></i>
+                <span class='song-name'>Tears in heaven</span>
+                <span class='song-time'>5:30</span>
+                
+            </div>
+            <div>
+                <i style='color:rgb(189, 58, 184)' class="fas fa-heart"></i>
+                <i class="fas fa-redo-alt"></i>
+                <span class='song-name'>Candy paint</span>
+                <span class='song-time'>5:30</span>
+                
+            </div>
+            <div>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-redo-alt"></i>
+                <span class='song-name'>Summer of 69</span>
+                <span class='song-time'>5:30</span>
+                
+            </div>
+            <div>
+                <i  style='color:rgb(189, 58, 184)' class="fas fa-heart"></i>
+                <i class="fas fa-redo-alt"></i>
+                <span class='song-name'>Highway to hell</span>
+                <span class='song-time'>5:30</span>
+                
+            </div>
+            <div>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-redo-alt"></i>
+                <span class='song-name'>Tears on my guitar</span>
+                <span class='song-time'>5:30</span>
+                
+            </div>
+            <div>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-redo-alt"></i>
+                <span class='song-name'>Livin' on a prayer</span>
+                <span class='song-time'>5:30</span>
+                
+            </div>
+            <div>
+                <i style='color:rgb(189, 58, 184)' class="fas fa-heart"></i>
+                <i class="fas fa-redo-alt"></i>
+                <span class='song-name'>Bed of roses</span>
+                <span class='song-time'>5:30</span>
+                
+            </div>
+                                          
+
+           
+        
+
+        
+    </div>
+
+    <footer>
+        <div class='footer'>
+          <div> 
+            <img src='https://fanart.tv/fanart/music/eeb1195b-f213-4ce1-b28c-8565211f8e43/albumcover/new-yorks-ritz-1988-5b1e7773d0f02.jpg'>
+            <div>
+              <h4>Sweet Child of Mine</h4>
+              <p>Greatest Hits</p>
+            </div>
+            <i style='font-size: 20px;'class="fas fa-heart"></i>
+          </div>
+
+          <div>
+            <div>
+              <i style='font-size: 20px;'class="fas fa-random"></i>
+              <i style='font-size: 20px;' class="fas fa-angle-double-left"></i>
+              <i style='font-size: 35px;'  class="far fa-play-circle"></i>
+              <i style='font-size: 20px;' class="fas fa-angle-double-right"></i>
+              <i style='font-size: 15px;' class="fas fa-redo"></i>
+            </div>
+
+            <div>
+              <h4>0:20</h4>
+              <span>
+                <span></span>
+              </span>
+              <h4>3:00</h4>
+            </div>
+          </div>
+
+
+          <div>
+            <i class="fas fa-volume-up"></i>
+            <span>
+              <span></span>
+            </span>
+          </div>
+        </div>
+      </footer>
+
+    
+    
+     </div>
+
+
+
+     </body>
+     </html>
